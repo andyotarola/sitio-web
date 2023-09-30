@@ -52,13 +52,10 @@
 
 /*=== 1. General ====*/
 
-
-
 @font-face {
-  font-family: "muller";
+  font-family: 'muller';
   src: url(../fonts/Muller-ExtraBold-DEMO.woff);
 }
-
 
 .m0 {
   margin: 0;
@@ -69,36 +66,51 @@
 }
 
 body {
-  font: 400 16px/26px "Oxygen", sans-serif;
+  font: 400 16px/26px 'Oxygen', sans-serif;
   color: #666666;
 }
 
-ul, h2, h3, h4, h5, h6 {
+ul,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   list-style: none;
   padding: 0;
 }
 
-a, .btn, button {
+a,
+.btn,
+button {
   text-decoration: none;
   outline: none;
   transition: all 400ms linear 0s;
 }
-a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+a:hover,
+a:focus,
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus {
   text-decoration: none;
   outline: none;
 }
 
-.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
   outline: none;
   box-shadow: none;
 }
 
-
-
 /*=== 2. Content styles ====*/
 
-.loader{
+.loader {
   position: fixed;
   overflow: hidden;
   z-index: 10000;
@@ -106,20 +118,20 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  background:#fff;
-  color:#fff;
+  background: #fff;
+  color: #fff;
   text-align: center;
 }
 
-.loader-brand{
+.loader-brand {
   position: absolute;
-  left:0;
+  left: 0;
   width: 100%;
-  top:50%;
+  top: 50%;
   -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-       -o-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .sk-folding-cube {
@@ -128,7 +140,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 40px;
   position: relative;
   -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
 .sk-folding-cube .sk-cube {
@@ -137,8 +149,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 50%;
   position: relative;
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1); 
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .sk-folding-cube .sk-cube:before {
@@ -150,81 +162,92 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 100%;
   background-color: #14b6f2;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
-          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 }
 
 .sk-folding-cube .sk-cube2 {
   -webkit-transform: scale(1.1) rotateZ(90deg);
-          transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg);
 }
 
 .sk-folding-cube .sk-cube3 {
   -webkit-transform: scale(1.1) rotateZ(180deg);
-          transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg);
 }
 
 .sk-folding-cube .sk-cube4 {
   -webkit-transform: scale(1.1) rotateZ(270deg);
-          transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg);
 }
 
 .sk-folding-cube .sk-cube2:before {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .sk-folding-cube .sk-cube3:before {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; 
+  animation-delay: 0.6s;
 }
 
 .sk-folding-cube .sk-cube4:before {
   -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 @-webkit-keyframes sk-foldCubeAngle {
-  0%, 10% {
+  0%,
+  10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
-    opacity: 0; 
-  } 25%, 75% {
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+  75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
-            transform: perspective(140px) rotateX(0deg);
-    opacity: 1; 
-  } 90%, 100% {
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+  100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
-            transform: perspective(140px) rotateY(180deg);
-    opacity: 0; 
-  } 
-}
-
-@keyframes sk-foldCubeAngle {
-  0%, 10% {
-    -webkit-transform: perspective(140px) rotateX(-180deg);
-            transform: perspective(140px) rotateX(-180deg);
-    opacity: 0; 
-  } 25%, 75% {
-    -webkit-transform: perspective(140px) rotateX(0deg);
-            transform: perspective(140px) rotateX(0deg);
-    opacity: 1; 
-  } 90%, 100% {
-    -webkit-transform: perspective(140px) rotateY(180deg);
-            transform: perspective(140px) rotateY(180deg);
-    opacity: 0; 
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
   }
 }
 
+@keyframes sk-foldCubeAngle {
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
 
-section.row, header.row, footer.row {
+section.row,
+header.row,
+footer.row {
   margin: 0;
 }
 
 .section-title {
-  font: 700 20px "Oxygen", sans-serif;
+  font: 700 20px 'Oxygen', sans-serif;
   letter-spacing: 3px;
   text-transform: uppercase;
   position: relative;
@@ -244,12 +267,12 @@ section.row, header.row, footer.row {
 }
 
 .features-num {
-  font: 700 70px "Rufina", serif;
+  font: 700 70px 'Rufina', serif;
   display: block;
 }
 
 .date {
-  font: 700 14px "Rufina", serif;
+  font: 700 14px 'Rufina', serif;
   display: inline-block;
 }
 .date a {
@@ -259,11 +282,7 @@ section.row, header.row, footer.row {
   color: #666666;
 }
 
-
-
 /*==== 3 Area colors ====*/
-
-
 
 .header-area .main-menu nav ul li a {
   color: #fff;
@@ -292,7 +311,6 @@ section.row, header.row, footer.row {
   color: #101010;
 }
 
-
 .header-area .main-menu nav ul li .sub-menu li a:hover,
 .header-area .main-menu nav ul li .sub-menu .active a {
   color: #ec3535;
@@ -311,7 +329,7 @@ section.row, header.row, footer.row {
   background: none;
 }
 
-.mobile-menu-area .mean-container .mean-nav ul ul .active a{
+.mobile-menu-area .mean-container .mean-nav ul ul .active a {
   color: #ec3535;
 }
 
@@ -357,9 +375,21 @@ section.row, header.row, footer.row {
 }
 
 .about-area .about-content .about-img:after {
-  background-image: -moz-linear-gradient(-90deg, rgba(0, 175, 240, 0.38824) 0%, rgba(0, 175, 240, 0.98039) 100%);
-  background-image: -webkit-linear-gradient(-90deg, rgba(0, 175, 240, 0.38824) 0%, rgba(0, 175, 240, 0.98039) 100%);
-  background-image: -ms-linear-gradient(-90deg, rgba(0, 175, 240, 0.38824) 0%, rgba(0, 175, 240, 0.98039) 100%);
+  background-image: -moz-linear-gradient(
+    -90deg,
+    rgba(0, 175, 240, 0.38824) 0%,
+    rgba(0, 175, 240, 0.98039) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    -90deg,
+    rgba(0, 175, 240, 0.38824) 0%,
+    rgba(0, 175, 240, 0.98039) 100%
+  );
+  background-image: -ms-linear-gradient(
+    -90deg,
+    rgba(0, 175, 240, 0.38824) 0%,
+    rgba(0, 175, 240, 0.98039) 100%
+  );
 }
 
 .about-area .about-content .about-img .content h3 {
@@ -452,7 +482,7 @@ section.row, header.row, footer.row {
   color: #4b4b4b;
 }
 
-label{
+label {
   font-size: 12px;
   margin-left: 12px;
   color: #12b5f1;
@@ -469,7 +499,7 @@ label{
   position: relative;
 }
 .map-contact-area .contact-info {
-   background-color: #252525;
+  background-color: #252525;
   opacity: 0.949;
   width: 100%;
   display: block;
@@ -578,13 +608,34 @@ label{
 .blog-area .side-bar-section .widget .widget-tittle {
   color: #3d3d3d;
 }
-.blog-area .side-bar-section .widget .widget-inner .recent-post .media-body .post-title a {
+.blog-area
+  .side-bar-section
+  .widget
+  .widget-inner
+  .recent-post
+  .media-body
+  .post-title
+  a {
   color: #3d3d3d;
 }
-.blog-area .side-bar-section .widget .widget-inner .recent-post .media-body .post-title a:hover {
+.blog-area
+  .side-bar-section
+  .widget
+  .widget-inner
+  .recent-post
+  .media-body
+  .post-title
+  a:hover {
   color: #14b6f2;
 }
-.blog-area .side-bar-section .widget .widget-inner .recent-post .media-body .post-date a {
+.blog-area
+  .side-bar-section
+  .widget
+  .widget-inner
+  .recent-post
+  .media-body
+  .post-date
+  a {
   color: #666666;
 }
 
@@ -710,7 +761,7 @@ label{
   position: relative;
 }
 .header-area .main-menu nav ul li a {
-  font: 700 12px/46px "Oxygen", sans-serif;
+  font: 700 12px/46px 'Oxygen', sans-serif;
   letter-spacing: 2px;
   padding: 36px 0px 20px;
   display: inline-block;
@@ -737,7 +788,7 @@ label{
   margin: 0px;
 }
 .header-area .main-menu nav ul li .sub-menu li a {
-  font: 700 12px/16px "Oxygen", sans-serif;
+  font: 700 12px/16px 'Oxygen', sans-serif;
   padding: 15px 20px;
   text-transform: capitalize;
 }
@@ -803,7 +854,7 @@ label{
   z-index: 999999;
 }
 .mobile-menu-area .mean-container .mean-nav ul li a {
-  font: 700 12px/16px "Oxygen", sans-serif;
+  font: 700 12px/16px 'Oxygen', sans-serif;
   background: none;
 }
 
@@ -816,11 +867,11 @@ label{
 .main-slider-area .slide-tittle h2 {
   font-weight: 400;
   text-shadow: none;
-  font-family: "Rufina", serif;
+  font-family: 'Rufina', serif;
   font-size: 60px;
 }
 .main-slider-area .slider-p p {
-  font: 400 18px/28px "Oxygen", sans-serif;
+  font: 400 18px/28px 'Oxygen', sans-serif;
   padding-right: 72px;
   padding-top: 28px;
   padding-bottom: 39px;
@@ -873,7 +924,9 @@ label{
   height: 7px;
   border: 0px;
 }
-.main-slider-area .zeus .tp-bullet .tp-bullet-image, .main-slider-area .zeus .tp-bullet .tp-bullet-imageoverlay, .main-slider-area .zeus .tp-bullet .tp-bullet-title {
+.main-slider-area .zeus .tp-bullet .tp-bullet-image,
+.main-slider-area .zeus .tp-bullet .tp-bullet-imageoverlay,
+.main-slider-area .zeus .tp-bullet .tp-bullet-title {
   display: none;
 }
 .main-slider-area .zeus .tp-bullet:after {
@@ -903,18 +956,18 @@ label{
   display: block;
   top: 0;
   left: 0;
-  opacity: 0.50;
+  opacity: 0.5;
 }
 
 .page-cover {
   max-width: 590px;
 }
 .page-cover .section-header {
-  font: 400 60px "Rufina", serif;
+  font: 400 60px 'Rufina', serif;
   padding-bottom: 28px;
 }
 .page-cover p {
-  font: 400 18px/28px "Oxygen", sans-serif;
+  font: 400 18px/28px 'Oxygen', sans-serif;
   letter-spacing: 0px;
 }
 
@@ -941,7 +994,7 @@ label{
   padding-right: 20px;
 }
 .features-area .features-content h2 {
-  font: 700 16px "Oxygen", sans-serif;
+  font: 700 16px 'Oxygen', sans-serif;
   text-transform: uppercase;
   padding: 8px 0px 19px;
   transition: all 400ms linear 0s;
@@ -957,7 +1010,7 @@ label{
 
 /*==== 4.6 clients-about-area css ====*/
 .clients-about-area {
-  background: url("../image/clients-about-us-bg.jpg") no-repeat scroll center 0;
+  background: url('../image/clients-about-us-bg.jpg') no-repeat scroll center 0;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -1000,10 +1053,11 @@ label{
   vertical-align: middle;
 }
 .clients-about-area .slider-carousel .slider-content .media .media-body span {
-  font: 400 16px/24px "Oxygen", sans-serif;
+  font: 400 16px/24px 'Oxygen', sans-serif;
   font-style: italic;
 }
-.clients-about-area .slider-carousel .owl-prev, .clients-about-area .slider-carousel .owl-next {
+.clients-about-area .slider-carousel .owl-prev,
+.clients-about-area .slider-carousel .owl-next {
   position: absolute;
   top: 50%;
   font-size: 40px;
@@ -1033,7 +1087,7 @@ label{
   z-index: 1;
 }
 .about-area .about-content .about-img:after {
-  content: "";
+  content: '';
   width: 100%;
   top: 0;
   left: 0;
@@ -1053,13 +1107,13 @@ label{
   padding: 32px 40px 40px;
 }
 .about-area .about-content .about-img .content h3 {
-  font: 700 25px/35px "Rufina", serif;
+  font: 700 25px/35px 'Rufina', serif;
   padding-right: 125px;
   position: relative;
   padding-bottom: 200px;
 }
 .about-area .about-content .about-img .content h3:after {
-  content: "\7b";
+  content: '\7b';
   font-family: 'ElegantIcons';
   speak: none;
   font-style: normal;
@@ -1071,13 +1125,13 @@ label{
   top: 63px;
 }
 .about-area .about-content .about-img .content span {
-  font: 400 16px/26px "Oxygen", sans-serif;
+  font: 400 16px/26px 'Oxygen', sans-serif;
   font-style: italic;
   color: #fff;
   display: inline-block;
 }
 .about-area .about-content .about-img .content h4 {
-  font-family: "muller";
+  font-family: 'muller';
   font-size: 20px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1088,7 +1142,7 @@ label{
   padding: 36px 58px 0px 33px;
 }
 .about-area .about-content .texts h2 {
-  font: 700 25px "Rufina", serif;
+  font: 700 25px 'Rufina', serif;
   transition: all 400ms linear 0s;
 }
 .about-area .about-content .texts p {
@@ -1104,7 +1158,7 @@ label{
   padding: 114px 0px 103px;
 }
 .about-text-area .about-text h2 {
-  font: 700 25px/35px "Rufina", serif;
+  font: 700 25px/35px 'Rufina', serif;
   letter-spacing: 0px;
   position: relative;
   display: block;
@@ -1158,7 +1212,7 @@ label{
 /*====================================================*/
 /*=== 4.9 button css ===*/
 .button {
-  font: 700 14px/50px "Oxygen", sans-serif;
+  font: 700 14px/50px 'Oxygen', sans-serif;
   letter-spacing: 2px;
   padding: 0px 20px;
   text-transform: uppercase;
@@ -1174,7 +1228,7 @@ label{
   z-index: 2;
 }
 .button:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1210,7 +1264,7 @@ label{
 
 .submit {
   background: #ec3535;
-  font: 700 14px/50px "Oxygen", sans-serif;
+  font: 700 14px/50px 'Oxygen', sans-serif;
   color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1221,7 +1275,7 @@ label{
   z-index: 2;
 }
 .submit:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1269,14 +1323,14 @@ label{
   margin: 0 auto;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  opacity: 0.30;
+  opacity: 0.3;
   transition: all 400ms linear 0s;
 }
 .partner-logo-area .partner-carousel .single-partner:hover img {
   transform: scale(1.1);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
-  opacity: 0.80;
+  opacity: 0.8;
 }
 
 /*====================================================*/
@@ -1331,7 +1385,7 @@ label{
   transition: all 400ms linear 0s;
 }
 .latest-blog-area .latest .blog .blog-content h2 {
-  font: 700 16px "Rufina", serif;
+  font: 700 16px 'Rufina', serif;
 }
 .latest-blog-area .latest .blog .blog-content p {
   padding: 19px 0px 15px;
@@ -1341,7 +1395,7 @@ label{
 }
 .latest-blog-area .latest .blog:hover .img-hover:after {
   transform: translateY(0);
-  opacity: 0.40;
+  opacity: 0.4;
 }
 .latest-blog-area .latest .blog:hover .blog-content {
   transform: rotateY(-180deg);
@@ -1357,7 +1411,7 @@ label{
 
 /*==== 4.12 question-area css ====*/
 .question-area {
-  background: url("../image/question-bg.jpg") no-repeat scroll center 0;
+  background: url('../image/question-bg.jpg') no-repeat scroll center 0;
   background-size: cover;
   padding: 120px 0px;
   position: relative;
@@ -1365,7 +1419,7 @@ label{
   overflow: hidden;
 }
 .question-area:after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1375,7 +1429,7 @@ label{
   z-index: -1;
 }
 .question-area:before {
-  content: "MetRopol";
+  content: 'MetRopol';
   position: absolute;
   left: 0;
   top: 50%;
@@ -1383,7 +1437,7 @@ label{
   width: 100%;
   z-index: -1;
   font-size: 542px;
-  font-family: "muller";
+  font-family: 'muller';
   color: #fff;
   opacity: 0.859;
   display: block;
@@ -1393,7 +1447,7 @@ label{
   padding: 0px 70px;
 }
 .question-area .question-content h2 {
-  font: 400 40px/50px "Rufina", serif;
+  font: 400 40px/50px 'Rufina', serif;
 }
 .question-area .question-content p {
   padding: 33px 80px 0px 0px;
@@ -1412,23 +1466,36 @@ label{
   outline: none;
   box-shadow: none;
   border-radius: 0px;
-  font: 400 16px/26px "Oxygen", sans-serif;
+  font: 400 16px/26px 'Oxygen', sans-serif;
   text-transform: capitalize;
   padding: 0px 0px 3px 12px;
 }
 .question-area .question-contact-form .contact-form .form-control.placeholder {
   color: #4b4b4b;
 }
-.question-area .question-contact-form .contact-form .form-control:-moz-placeholder {
+.question-area
+  .question-contact-form
+  .contact-form
+  .form-control:-moz-placeholder {
   color: #4b4b4b;
 }
-.question-area .question-contact-form .contact-form .form-control::-moz-placeholder {
+.question-area
+  .question-contact-form
+  .contact-form
+  .form-control::-moz-placeholder {
   color: #4b4b4b;
 }
-.question-area .question-contact-form .contact-form .form-control::-webkit-input-placeholder {
+.question-area
+  .question-contact-form
+  .contact-form
+  .form-control::-webkit-input-placeholder {
   color: #4b4b4b;
 }
-.question-area .question-contact-form .contact-form .form-control + .form-control {
+.question-area
+  .question-contact-form
+  .contact-form
+  .form-control
+  + .form-control {
   margin-top: 32px;
 }
 .question-area .question-contact-form .contact-form textarea {
@@ -1457,10 +1524,15 @@ label{
   border-radius: 50%;
   left: 8px;
   font-size: 30px;
-  font-family: "Rufina", serif;
+  font-family: 'Rufina', serif;
   font-weight: 700;
 }
-.work-progressbar-area .work-progress .work-progressbar .circle .chart-percent .text {
+.work-progressbar-area
+  .work-progress
+  .work-progressbar
+  .circle
+  .chart-percent
+  .text {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1489,13 +1561,13 @@ label{
   font-size: 61px;
 }
 .map-contact-area .contact-info .info .box .media-body h2 {
-  font: 700 20px/21px "Oxygen", sans-serif;
-  letter-spacing: 2.10px;
+  font: 700 20px/21px 'Oxygen', sans-serif;
+  letter-spacing: 2.1px;
   text-transform: uppercase;
   padding-bottom: 28px;
 }
 .map-contact-area .contact-info .info .box .media-body ul li {
-  font: 400 16px/24px "Oxygen", sans-serif;
+  font: 400 16px/24px 'Oxygen', sans-serif;
 }
 .map-contact-area .contact-info .info .box .icon {
   padding-right: 21px;
@@ -1535,7 +1607,7 @@ label{
   z-index: -1;
 }
 .team-area .teams .team .team-img img {
-  transition: all .4s ease-in;
+  transition: all 0.4s ease-in;
 }
 .team-area .teams .team .team-img .social-icon {
   position: absolute;
@@ -1556,8 +1628,8 @@ label{
   padding-right: 15px;
 }
 .team-area .teams .team h2 {
-  font: 700 16px "Oxygen", sans-serif;
-  letter-spacing: 2.20px;
+  font: 700 16px 'Oxygen', sans-serif;
+  letter-spacing: 2.2px;
   text-transform: uppercase;
   padding-top: 27px;
   transition: all 400ms linear 0s;
@@ -1577,7 +1649,7 @@ label{
 }
 .team-area .teams .team:hover .team-img:after {
   transform: translateY(0);
-  opacity: 0.50;
+  opacity: 0.5;
 }
 
 /*====================================================*/
@@ -1596,7 +1668,7 @@ label{
   padding-right: 92px;
 }
 .services-area .service .services-item h2 {
-  font: 700 25px "Oxygen", sans-serif;
+  font: 700 25px 'Oxygen', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 4px 0px 18px;
@@ -1621,7 +1693,7 @@ label{
   top: 10px;
   bottom: -10px;
   left: -10px;
-  Z-INDEX: -1;
+  z-index: -1;
 }
 .services-area .service .service-img .img:after {
   content: '';
@@ -1651,7 +1723,7 @@ label{
   padding: 114px 0px 110px;
 }
 .blog-area .blog-section h2 {
-  font: 700 30px/39px "Rufina", serif;
+  font: 700 30px/39px 'Rufina', serif;
 }
 .blog-area .blog-section .blog-inner {
   padding: 22px 0px 15px;
@@ -1685,14 +1757,14 @@ label{
   padding-top: 23px;
 }
 .blog-area .blog-section .tag {
-  font: 700 14px/32px "Oxygen", sans-serif;
+  font: 700 14px/32px 'Oxygen', sans-serif;
   text-transform: uppercase;
   padding-top: 31px;
   margin-top: 36px;
 }
 .blog-area .blog-section .tag h3 {
   display: inline-block;
-  font: 700 14px/32px "Oxygen", sans-serif;
+  font: 700 14px/32px 'Oxygen', sans-serif;
 }
 .blog-area .blog-section .tag ul {
   display: inline-block;
@@ -1704,8 +1776,8 @@ label{
   padding: 30px 20px 0px;
 }
 .blog-area .side-bar-section .widget .widget-tittle {
-  font: 700 20px/28px "Oxygen", sans-serif;
-  letter-spacing: 2.20px;
+  font: 700 20px/28px 'Oxygen', sans-serif;
+  letter-spacing: 2.2px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1716,11 +1788,23 @@ label{
   padding-right: 30px;
   vertical-align: middle;
 }
-.blog-area .side-bar-section .widget .widget-inner .recent-post .media-body .post-title {
-  font: 700 18px/28px "Rufina", serif;
+.blog-area
+  .side-bar-section
+  .widget
+  .widget-inner
+  .recent-post
+  .media-body
+  .post-title {
+  font: 700 18px/28px 'Rufina', serif;
 }
-.blog-area .side-bar-section .widget .widget-inner .recent-post .media-body .post-date {
-  font: 400 14px/35px "Rufina", serif;
+.blog-area
+  .side-bar-section
+  .widget
+  .widget-inner
+  .recent-post
+  .media-body
+  .post-date {
+  font: 400 14px/35px 'Rufina', serif;
 }
 
 /*==== 4.18 blog-post css ====*/
@@ -1745,7 +1829,7 @@ label{
 /*====================================================*/
 /*===== 4.19 contact area css =====*/
 .contact-area {
-  background: url("../image/contacts-bg.jpg") no-repeat scroll center 0;
+  background: url('../image/contacts-bg.jpg') no-repeat scroll center 0;
   background-size: cover;
   padding-top: 198px;
   padding-bottom: 120px;
@@ -1761,7 +1845,7 @@ label{
   display: block;
   top: 0;
   left: 0;
-  opacity: 0.80;
+  opacity: 0.8;
 }
 .contact-area .contact-info-section {
   padding-top: 108px;
@@ -1770,7 +1854,7 @@ label{
   text-align: center;
 }
 .contact-area .contact-info-section .contact-info .info-icon {
-  background: url("../image/blog/polygon-shape.png") no-repeat;
+  background: url('../image/blog/polygon-shape.png') no-repeat;
   background-position: center;
   text-align: center;
   display: inline-block;
@@ -1781,7 +1865,7 @@ label{
   line-height: 85px;
 }
 .contact-area .contact-info-section .contact-info h5 {
-  font: 400 16px/24px "Oxygen", sans-serif;
+  font: 400 16px/24px 'Oxygen', sans-serif;
   padding-top: 26px;
 }
 .contact-area .contact-info-section .contact-info.first-info {
@@ -1819,7 +1903,7 @@ label{
   border-right: 0px;
   border-radius: 0px;
   padding: 0px 0px 0px 10px;
-  font: 400 18px/47px "Oxygen", sans-serif;
+  font: 400 18px/47px 'Oxygen', sans-serif;
   color: #fff;
   height: auto;
   box-shadow: none;
@@ -1834,14 +1918,17 @@ label{
 .contact-area .contact-form-box .form-group .form-control::-moz-placeholder {
   color: #fff;
 }
-.contact-area .contact-form-box .form-group .form-control::-webkit-input-placeholder {
+.contact-area
+  .contact-form-box
+  .form-group
+  .form-control::-webkit-input-placeholder {
   color: #fff;
 }
 .contact-area .contact-form-box .form-group .form-control.error {
   margin-bottom: 0;
 }
 .contact-area .contact-form-box .form-group .form-control.error + .error {
-  font: 13px/24px "Oxygen", sans-serif;
+  font: 13px/24px 'Oxygen', sans-serif;
   margin-bottom: 20px;
   margin-top: 5px;
   font-weight: normal;
@@ -1855,10 +1942,11 @@ label{
   padding-top: 19px;
 }
 
-#success,  #error {
+#success,
+#error {
   display: none;
   margin-top: 15px;
-  text-align:center;
+  text-align: center;
 }
 #success {
   color: lawngreen;
@@ -1884,15 +1972,15 @@ label{
   padding: 75px 0px 50px;
 }
 .footer-area .footer-top .widget .widget-tittle {
-  font: 700 16px/24px "Oxygen", sans-serif;
+  font: 700 16px/24px 'Oxygen', sans-serif;
   text-transform: uppercase;
   padding-bottom: 17px;
-  letter-spacing: 2.20px;
+  letter-spacing: 2.2px;
 }
 .footer-area .footer-top .widget.about-widget p {
-  font: 300 14px/24px "Oxygen", sans-serif;
+  font: 300 14px/24px 'Oxygen', sans-serif;
   font-weight: lighter;
-  letter-spacing: -0.10px;
+  letter-spacing: -0.1px;
   padding-bottom: 37px;
 }
 .footer-area .footer-top .widget .widget-inner {
@@ -1902,7 +1990,7 @@ label{
   padding: 0px 70px 0px 75px;
 }
 .footer-area .footer-top .widget-link ul li a {
-  font: 300 14px/24px "Oxygen", sans-serif;
+  font: 300 14px/24px 'Oxygen', sans-serif;
 }
 .footer-area .footer-top .recent-widget {
   padding: 0px;
@@ -1920,11 +2008,11 @@ label{
   float: right;
 }
 .footer-area .footer-top .recent-widget li .recent-post-text h5 a {
-  font: 700 14px/24px "Rufina", serif;
+  font: 700 14px/24px 'Rufina', serif;
   margin: 0px;
 }
 .footer-area .footer-top .recent-widget li .recent-post-text a {
-  font: 700 12px/24px "Rufina", serif;
+  font: 700 12px/24px 'Rufina', serif;
 }
 .footer-area .footer-top .recent-widget li + li {
   margin-top: 30px;
@@ -1956,34 +2044,72 @@ label{
   height: auto;
   padding: 0px 0px 0px 15px;
 }
-.footer-area .footer-top .widget-news .search-form .input-group .form-control.placeholder {
+.footer-area
+  .footer-top
+  .widget-news
+  .search-form
+  .input-group
+  .form-control.placeholder {
   color: #9a9a9a;
 }
-.footer-area .footer-top .widget-news .search-form .input-group .form-control:-moz-placeholder {
+.footer-area
+  .footer-top
+  .widget-news
+  .search-form
+  .input-group
+  .form-control:-moz-placeholder {
   color: #9a9a9a;
 }
-.footer-area .footer-top .widget-news .search-form .input-group .form-control::-moz-placeholder {
+.footer-area
+  .footer-top
+  .widget-news
+  .search-form
+  .input-group
+  .form-control::-moz-placeholder {
   color: #9a9a9a;
 }
-.footer-area .footer-top .widget-news .search-form .input-group .form-control::-webkit-input-placeholder {
+.footer-area
+  .footer-top
+  .widget-news
+  .search-form
+  .input-group
+  .form-control::-webkit-input-placeholder {
   color: #9a9a9a;
 }
-.footer-area .footer-top .widget-news .search-form .input-group .input-group-addon {
+.footer-area
+  .footer-top
+  .widget-news
+  .search-form
+  .input-group
+  .input-group-addon {
   padding: 0px;
   background: none;
   border: 0px;
 }
-.footer-area .footer-top .widget-news .search-form .input-group .input-group-addon button {
+.footer-area
+  .footer-top
+  .widget-news
+  .search-form
+  .input-group
+  .input-group-addon
+  button {
   padding: 0px 15px;
   border: 0px;
   border-radius: 3px;
 }
-.footer-area .footer-top .widget-news .search-form .input-group .input-group-addon button i {
+.footer-area
+  .footer-top
+  .widget-news
+  .search-form
+  .input-group
+  .input-group-addon
+  button
+  i {
   font-size: 15px;
   line-height: 36px;
 }
 .footer-area .footer-bottom {
-  font: 400 12px/24px "Oxygen", sans-serif;
+  font: 400 12px/24px 'Oxygen', sans-serif;
   padding: 34px 0px;
 }
 .footer-area .footer-bottom .footer-nav {
@@ -2030,6 +2156,12 @@ label{
 }
 .footer-area .footer-bottom .social-nav ul li + li {
   padding-left: 40px;
+}
+
+/* Nuevos cambios */
+
+.opacity-1 {
+  opacity: 1 !important;
 }
 
 /*====================================================*/
