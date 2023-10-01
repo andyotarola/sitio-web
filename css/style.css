@@ -2182,3 +2182,12 @@ label {
 }
 
 /*====================================================*/
+/* .tp-simpleresponsive > ul {
+  position: initial;
+} */
+
+@media (min-width: 991px) {
+  .tp-simpleresponsive > ul {
+    position: initial !important;
+  }
+}
