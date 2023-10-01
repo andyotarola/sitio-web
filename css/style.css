@@ -69,6 +69,9 @@ body {
   font: 400 16px/26px 'Oxygen', sans-serif;
   color: #666666;
 }
+img {
+  max-width: 100%;
+}
 
 ul,
 h2,
@@ -255,17 +258,6 @@ footer.row {
   color: #3d3d3d;
 }
 
-.section-title:after {
-  content: '';
-  width: 100px;
-  height: 2px;
-  display: block;
-  position: absolute;
-  top: 13px;
-  right: -187px;
-  background: #f0efef;
-}
-
 .features-num {
   font: 700 70px 'Rufina', serif;
   display: block;
@@ -370,6 +362,9 @@ footer.row {
 }
 
 /*===== 3.4 about area color ====*/
+.about-area {
+  overflow: hidden;
+}
 .about-area .about-content {
   background: #f8f8f8;
 }
@@ -418,10 +413,6 @@ footer.row {
 
 .clients-about-area .section-title {
   color: #fff;
-}
-
-.clients-about-area .section-title:after {
-  background: #67caf0;
 }
 
 .clients-about-area .slider-carousel .slider-content .text {
@@ -2012,8 +2003,7 @@ label {
 }
 .footer-area .footer-top .recent-widget li .recent-post-text {
   vertical-align: middle;
-  width: 70%;
-  float: right;
+  padding-inline: 1em;
 }
 .footer-area .footer-top .recent-widget li .recent-post-text h5 a {
   font: 700 14px/24px 'Rufina', serif;
@@ -2126,6 +2116,7 @@ label {
 }
 .footer-area .footer-bottom .footer-nav li {
   display: inline-block;
+  position: relative;
 }
 .footer-area .footer-bottom .footer-nav li a {
   padding: 0px;
@@ -2186,8 +2177,37 @@ label {
   position: initial;
 } */
 
-@media (min-width: 991px) {
+/* @media (min-width: 991px) {
   .tp-simpleresponsive > ul {
     position: initial !important;
   }
+} */
+.tp-revslider-mainul {
+  width: 100% !important;
+}
+/* .row {
+  margin-inline: 0 !important;
+} */
+
+.management .section-header {
+  font: 400 25px 'Rufina', serif;
+}
+
+@media (min-width: 600px) {
+  .management .section-header {
+    font: 400 50px 'Rufina', serif;
+  }
+}
+
+@media (min-width: 991px) {
+  .management .section-header {
+    font: 400 60px 'Rufina', serif;
+  }
+}
+
+.widget-link {
+  padding-bottom: 4em !important;
+}
+.recent-widget {
+  padding-bottom: 4em !important;
 }
