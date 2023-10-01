@@ -755,6 +755,8 @@ label {
 .header-area .main-menu nav ul {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 .header-area .main-menu nav ul li {
   display: inline-block;
@@ -768,9 +770,9 @@ label {
   text-transform: uppercase;
   text-shadow: none;
 }
-.header-area .main-menu nav ul li + li {
+/* .header-area .main-menu nav ul li + li {
   margin-left: 61px;
-}
+} */
 .header-area .main-menu nav ul li .sub-menu {
   position: absolute;
   opacity: 0;
@@ -947,6 +949,12 @@ label {
   z-index: 1;
   padding: 197px 0px 109px;
 }
+
+.banner-area.management {
+  background: url(../image/management.png) no-repeat center 0;
+  background-size: cover;
+}
+
 .banner-area:after {
   content: '';
   width: 100%;
@@ -2162,6 +2170,15 @@ label {
 
 .opacity-1 {
   opacity: 1 !important;
+}
+
+.management-area {
+  margin: 4rem 0;
+}
+
+.management-area__title {
+  font-size: 36px;
+  font-weight: bold;
 }
 
 /*====================================================*/
